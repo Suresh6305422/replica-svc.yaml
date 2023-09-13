@@ -9,7 +9,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      name: nginx
+      app: nginx
       purpose: release
   template:
     metadata:

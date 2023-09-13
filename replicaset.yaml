@@ -3,18 +3,18 @@ kind: ReplicaSet
 metadata:
   name: nginx
   labels:
-    app: nginx
+    name: nginx
 spec:
   minReadySeconds: 2
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      name: nginx
       purpose: release
   template:
     metadata:
       labels:
-        app: nginx
+        name: nginx
     spec:
       containers:
         - name: nginxc

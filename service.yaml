@@ -10,5 +10,4 @@ spec:
     app: nginx
   ports:
     - ports: 80
-      protocol: TCP
       targetPort: 80      

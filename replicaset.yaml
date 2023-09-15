@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: nginxc
-          image: nginx
+          image: petclinic:1.0.0
           ports:
             - containerPort: 80
               protocol: TCP        
